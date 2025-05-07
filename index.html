@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Tiket Pesawat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="tersedia.html">
+</head>
+<body>
+    
+
+    <!-- HEADER-->
+
+    <header>
+        <div class="logo">RIDHO AIRLANES</div>
+        <div class="menu-icon" id="menuIcon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    
+
+    <!-- Main Section -->
+
+    <main class="main-container">
+        <section class="left-section" data-aos="fade-right" data-aos-duration="3000">
+            <div class="content">
+                <h1>Jelajahi Dunia<br> Dengan Penerbangan Kami!</h1>
+                <form id="bookingForm" action="tersedia.html">
+                    <div class="trip-type">
+                        <label>
+                            <input type="radio" name="tripType" value="return" required>Return
+                        </label>
+                        <label>
+                            <input type="radio" name="tripType" value="oneway" required>Oneway
+                        </label>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-wrapper">
+                            <select id="takeOff" required>
+                                <option value="" disabled selected>From</option>
+                                <option value="USA">USA</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="India">India</option>
+                                <option value="France">France</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Mexico">Gerogia</option>
+                                <option value="Spain">Spain</option>
+                                
+                            </select>
+                        </div>
+
+                        <div class="icon">
+                            <i class="fa-solid fa-plane"></i>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <select id="arrival" required>
+                                <option value="" disabled selected>Arrival</option>
+                                <option value="" disabled selected>To</option>
+                                <option value="USA">USA</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="India">India</option>
+                                <option value="France">France</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Mexico">Gerogia</option>
+                                <option value="Spain">Spain</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-wrapper">
+                            <input type="date" id="departureDate" name="date" required>
+                        </div>
+
+                        <div class="icon">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <input type="date" id="returnDate" name="date" required>
+                        </div>
+                    </div>
+
+                    <button type="submit">Cari Pesawat</button>
+
+                      
+                    
+                </form>
+            </div>
+
+            <div class="slider">
+                <div class="slider-header">
+                    <h2>Tujuan Populer</h2>
+                    <div class="slider-buttons">
+                        <button id="prev" class="slider-btn">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+
+                        <button id="next" class="slider-btn">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="slider-container">
+                    <div class="slider-images">
+                        <div class="slide">
+                            <img src="Assets/download.jpeg" alt="Indonesia">
+                            <div class="info">
+                                <p class="location">Indonesia</p>
+                                <p class="sub-location">Bali</p>
+                                <div class="price">
+                                    <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                    <span>Rp290.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="Assets/jepang.jpeg" alt="jepang">
+                            <div class="info">
+                                <p class="location">jepang</p>
+                                <p class="sub-location">Tokyo</p>
+                                <div class="price">
+                                    <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                    <span>Rp2.399.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="Assets/paris.jpeg" alt="France">
+                            <div class="info">
+                                <p class="location">France</p>
+                                <p class="sub-location">Paris</p>
+                                <div class="price">
+                                    <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                    <span>Rp3.199.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="Assets/berlin.jpeg" alt="Germany">
+                            <div class="info">
+                                <p class="location">Germany</p>
+                                <p class="sub-location">Berlin</p>
+                                <div class="price">
+                                    <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                    <span>Rp2.459.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="Assets/india.jpeg" alt="India">
+                            <div class="info">
+                                <p class="location">India</p>
+                                <p class="sub-location">Taj Mahal</p>
+                                <div class="price">
+                                    <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                    <span>Rp1.999.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="Assets/newyork.jpeg" alt="Greece">
+                            <div class="info">
+                                <p class="location">USA</p>
+                                <p class="sub-location">New York</p>
+                                <div class="price">
+                                    <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                    <span>Rp5.000.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="right-section" data-aos="fade-up-left" data-aos-duration="3000">
+            <img src="Assets/plane.png">
+        </section>
+    </main>
+
+
+    
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- AOS JS -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+        AOS.init({
+            offset: 1
+        });
+    </script>
+</body>
+</html>
